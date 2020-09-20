@@ -1,6 +1,7 @@
 /*
 Problem 25 2019 AMC 10B
-How many sequences of 0 and 1 of length 19 are there that begin with a 0, end with a 0, contain no two consecutive 0s, and contain no three consecutive 1s?
+How many sequences of 0 and 1 of length 19 are there that begin with a 0, end with a 0, 
+contain no two consecutive 0s, and contain no three consecutive 1s?
 
 A    55    B    60    C 65    D    70    E    75
 */
