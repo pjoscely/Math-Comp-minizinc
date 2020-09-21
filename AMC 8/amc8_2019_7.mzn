@@ -1,6 +1,8 @@
 /*
 Problem 7 AMC 8 2019
-Shauna takes five tests, each worth a maximum of 100 points. Her scores on the first three tests are 76, 94, and 87. In order to average 81 for all five tests, what is the lowest score she could earn on one of the other two tests?
+Shauna takes five tests, each worth a maximum of 100 points.
+Her scores on the first three tests are 76, 94, and 87. In order to average 81 for all five tests, 
+what is the lowest score she could earn on one of the other two tests?
 */
 par int: first = 76;
 par int: second = 94;
