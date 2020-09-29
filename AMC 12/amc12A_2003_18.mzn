@@ -25,6 +25,8 @@ solve satisfy;
 
 output ["\(10000*TenTh+1000*Th+100*H+10*T+U)"]; 
 /*
+8181 solutions
+
 11000
 ----------
 12100
