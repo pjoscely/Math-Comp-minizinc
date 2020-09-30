@@ -32,6 +32,7 @@ constraint s2 < s3;
 
 solve satisfy;
 /*
+%%  solutions:     5
 s1 = 2;
 s2 = 3;
 s3 = 4;
