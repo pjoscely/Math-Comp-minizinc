@@ -1,10 +1,18 @@
 /*
 Problem 13 AMC 8 2019
-A palindrome is a number that has the same value when read from left to right or from right to left. (For example, 12321 is a palindrome.) Let N be the least three-digit integer which is not a palindrome but which is the sum of three distinct two-digit palindromes. What is the sum of the digits of N?
+A palindrome is a number that has the same value when read from left to right or from right to left. 
+(For example, 12321 is a palindrome.) Let N be the least three-digit integer which 
+is not a palindrome but which is the sum of three distinct two-digit palindromes. 
+What is the sum of the digits of N?
+
+(A)   2     (B)   3    (C)   4     (D)   5     (E)   6
+
 */
+%Leading digit != 0
 var 1..9:N1;
 var 0..9:N2;
 var 0..9:N3;
+
 constraint N1 != N3;
 
 var 1..9:A;
