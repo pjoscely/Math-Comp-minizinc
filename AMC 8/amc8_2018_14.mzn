@@ -1,6 +1,10 @@
 /*
 Problem 14 AMC 8 2018
-Let N be the greatest five-digit number whose digits have a product of 120. What is the sum of the digits of N?
+Let N be the greatest five-digit number whose digits have a product of 120. 
+What is the sum of the digits of N?
+
+(A)   15  (B)   16  (C)   17    (D)   18    (E)   20  
+
 */
 
 var 1..9:A;
