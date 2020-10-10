@@ -1,4 +1,4 @@
-# Math-Comp-minizinc-
+# Math-Comp-minizinc
 Math Competition problems solved with minizinc https://www.minizinc.org/
 
 1. AMC 8 
