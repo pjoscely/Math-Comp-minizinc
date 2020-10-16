@@ -1,8 +1,6 @@
 /*
 Problem 11 2019 AMC 10B
-Two jars each contain the same number of marbles, and every marble is either blue or green. 
-In Jar 1 the ratio of blue to green marbles is 9:1, and the ratio of blue to green marbles in Jar 2 is 8:1. 
-There are 95 green marbles in all. How many more blue marbles are in Jar 1 than in Jar 2?
+Two jars each contain the same number of marbles, and every marble is either blue or green. In Jar 1 the ratio of blue to green marbles is 9:1, and the ratio of blue to green marbles in Jar 2 is 8:1. There are 95 green marbles in all. How many more blue marbles are in Jar 1 than in Jar 2?
 
 A    5     B    10    C    25     D    45    E    50
 */
