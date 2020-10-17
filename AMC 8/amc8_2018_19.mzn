@@ -1,20 +1,11 @@
 /*
 Problem 19 AMC 2018
-In a sign pyramid a cell gets a "+" if the two cells below it have the same sign,
-and it gets a "-" if the two cells below it have different signs. 
-The diagram below illustrates a sign pyramid with four levels. 
-How many possible ways are there to fill the four cells 
-in the bottom row to produce a "+" at the top of the pyramid?
-
+In a sign pyramid a cell gets a "+" if the two cells below it have the same sign, and it gets a "-" if the two cells below it have different signs. The diagram below illustrates a sign pyramid with four levels. How many possible ways are there to fill the four cells in the bottom row to produce a "+" at the top of the pyramid?
                      +
                   +     +
                 -    -     -
-             +    -     +     -
-              
-(A)   2   (B)   4   (C)   8   (D)   12    (E)   16
-
+              +   -     +     -
 */
-
 % Model + by 0 - by 1
 var 0..1:row11;
 
