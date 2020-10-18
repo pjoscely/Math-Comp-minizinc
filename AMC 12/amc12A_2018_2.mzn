@@ -1,8 +1,6 @@
 /*
 2018 AMC 12A Problem 2
-While exploring a cave, Carl comes across a collection of 5-pound rocks worth 14 each, 
-4-pound rocks worth 11 each, and 1-pound rocks worth 2 each. There are at least 20 of each size. 
-He can carry at most 18 pounds. 
+While exploring a cave, Carl comes across a collection of 5-pound rocks worth 14 each, 4-pound rocks worth 11 each, and 1-pound rocks worth 2 each. There are at least 20 of each size. He can carry at most 18 pounds. 
 What is the maximum value, in dollars, of the rocks he can carry out 
 of the cave?
 
