@@ -25,7 +25,6 @@ var int:wt = 5*five_p+4*four_p+one_p;
 %carry at most 18 pounds
 constraint wt<=18;
 
-
 %maximum value, in dollars
 solve maximize 14*five_p+11*four_p+2*one_p;
 
