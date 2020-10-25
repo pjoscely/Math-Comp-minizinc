@@ -9,4 +9,4 @@ https://artofproblemsolving.com/wiki/index.php/AMC_10_Problems_and_Solutions
 https://artofproblemsolving.com/wiki/index.php/AMC_12_Problems_and_Solutions
 
 Book: Elementary Minizinc for Mathematics and Puzzles
-Math problems and puzzles solved with minizinc
+      Math problems and puzzles solved with minizinc
