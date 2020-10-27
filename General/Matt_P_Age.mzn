@@ -35,7 +35,7 @@ constraint A2 = 3*D3;
 constraint D3 = 3*A3;
 
 % constant difference in ages 
-% across time instances
+% across the time instances
 constraint D1-D0 = A1-A0;
 constraint D2-D1 = A2-A1;
 constraint D3-D2 = A3-A2;
