@@ -1,14 +1,21 @@
 /*
 Problem 25 2019 AMC 10B
-How many sequences of 0 and 1 of length 19 are there that begin with a 0, end with a 0, contain no two consecutive 0s, and contain no three consecutive 1s?
+How many sequences of 0 and 1 of length 19 are there that 
+begin with a 0, end with a 0, contain no two consecutive 0s, 
+and contain no three consecutive 1s?
 
 A    55    B    60    C 65    D    70    E    75
 */
 
+% use an array to model sequences
 array[1..19] of var 0..1: s;
+% all sequences begin with 0
 constraint s[1] = 0;
+% all sequences end with 0
 constraint s[19] = 0;
+% contain no two consecutive 0s
 constraint forall(i in 1..18)(s[i]=1 \/ s[i+1] = 1); 
+% contain no three consecutive 1s
 constraint forall(i in 1..17)(s[i] = 0 \/ s[i+1] = 0 \/ s[i+2] = 0);
 
 solve satisfy;
