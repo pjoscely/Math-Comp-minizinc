@@ -25,8 +25,11 @@ constraint d[7] =  95;
 
 %7 different scores in all
 constraint alldifferent(d);
+
 solve satisfy;
-output["6th score: "++"\(d[6])"++" "++"\(d)"];
+
+% display scores
+output["6th score: "++"\(d[6])"++" "++" Scores: "++"\(d)"];
 
 %%  solutions:     8
 /*
