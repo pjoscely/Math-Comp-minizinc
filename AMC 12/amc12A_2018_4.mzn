@@ -1,16 +1,20 @@
 /*
 2018 AMC 10A Problem 4
-How many ways can a student schedule 3 mathematics courses -- algebra, geometry, and number theory -- in a 6-period day if no two mathematics courses can be taken in consecutive periods? (What courses the student takes during the other 3 periods 
+How many ways can a student schedule 3 mathematics courses -- 
+algebra, geometry, and number theory -- in a 6-period day if 
+no two mathematics courses can be taken in consecutive periods? 
+
+(What courses the student takes during the other 3 periods 
 is of no concern here.)
 
 (A)3     (B)6       (C)12      (D)18       (E) 24
 */
 % D is a dummy or filler course
-
 enum c = {A,G,N,D};
 
 array[1..6] of var c: s;
 
+% no two mathematics courses can be taken in consecutive periods
 constraint forall(d in 1..5)((s[d] = A) -> (s[d+1] != A));
 constraint forall(d in 1..5)((s[d] = A) -> (s[d+1] != G));
 constraint forall(d in 1..5)((s[d] = A) -> (s[d+1] != N));
@@ -23,13 +27,15 @@ constraint forall(d in 1..5)((s[d] = N) -> (s[d+1] != N));
 constraint forall(d in 1..5)((s[d] = N) -> (s[d+1] != A));
 constraint forall(d in 1..5)((s[d] = N) -> (s[d+1] != G));
 
+% a course may be scheduled only once
 constraint forall(i in 1..5, j in 2..6 where i <j)((s[i] = A) -> (s[j] != A));
 constraint forall(i in 1..5, j in 2..6 where i <j)((s[i] = G) -> (s[j] != G));
 constraint forall(i in 1..5, j in 2..6 where i <j)((s[i] = N) -> (s[j] != N));
 
-constraint sum(i in 1..6)(bool2int(s[i]=D)) = 3;
+constraint sum(i in 1..6)(bool2int(s[i] = D)) = 3;
 
 solve satisfy;
+% display schedules
 output[show(s)];
 /*
 %%  solutions:     24
