@@ -15,7 +15,7 @@ enum h = {h1, h2, h3, ketchup, mustard, mayonnaise, tomato, lettuce, pickles, ch
 %all possible subsets of h
 var set of h: possible;
 
-%must have meat patty
+%must have exactly 1, 2, or 3 meat patties
 constraint card(possible intersect {h1, h2, h3}) = 1;
 
 solve satisfy;
