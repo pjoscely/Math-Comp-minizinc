@@ -1,5 +1,5 @@
 /*
-2018 AMC 10A Problem 4
+2018 AMC 12A Problem 4
 How many ways can a student schedule 3 mathematics courses -- 
 algebra, geometry, and number theory -- in a 6-period day if 
 no two mathematics courses can be taken in consecutive periods? 
