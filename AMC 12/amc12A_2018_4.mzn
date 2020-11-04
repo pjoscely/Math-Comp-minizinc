@@ -32,6 +32,7 @@ constraint forall(i in 1..5, j in 2..6 where i <j)((s[i] = A) -> (s[j] != A));
 constraint forall(i in 1..5, j in 2..6 where i <j)((s[i] = G) -> (s[j] != G));
 constraint forall(i in 1..5, j in 2..6 where i <j)((s[i] = N) -> (s[j] != N));
 
+% schedule 3 mathematics courses
 constraint sum(i in 1..6)(bool2int(s[i] = D)) = 3;
 
 solve satisfy;
