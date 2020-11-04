@@ -20,6 +20,7 @@ constraint card(possible intersect {h1, h2, h3}) = 1;
 
 solve satisfy;
 
+% display sets 
 output["A burger = "++"\(possible)"];
 /*
 
