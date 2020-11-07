@@ -6,7 +6,7 @@ In a sign pyramid a cell gets a "+" if the two cells below it have the same sign
                 -    -     -
               +   -     +     -
 */
-% Model + by 0 - by 1
+% Model + by 0; - by 1
 var 0..1:row11;
 
 var 0..1:row21;
