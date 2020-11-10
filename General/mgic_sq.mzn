@@ -1,4 +1,3 @@
-
 % Magic Square
 include "alldifferent.mzn";
 % size of magic square to be created
@@ -11,6 +10,7 @@ array[1..N,1..N] of var 1..N*N:sq;
 int:magic_num = (N*(N*N+1)) div 2;
 
 % list comprehension
+
 constraint alldifferent([sq[i,j]|i in 1..N ,j in 1..N]);
 
 % row condition
