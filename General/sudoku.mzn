@@ -1,38 +1,36 @@
 include "alldifferent.mzn";
 
-par int: S = 2;
-int: N = S * S;
-par int: digs = N; % digits for output
+% initial board 0 = empty
+array[1..4,1..4] of 0..4: clues; 
 
-set of int: PuzzleRange = 1..N;
-set of int: SubSquareRange = 1..S;
-
-array[1..N,1..N] of 0..N: start; %% initial board 0 = empty
-
-start = [|0,4,0,0|
+% partially filled clue board
+clues =  [|0,4,0,0|
           0,0,4,0|
           0,0,0,2|
           1,0,0,0|];   
 
-array[1..N,1..N] of var PuzzleRange: puzzle;
+% 4 x 4 board to be solved
+array[1..4,1..4] of var 1..4: sudoku;
 
-% fill initial board
-constraint forall(i,j in PuzzleRange)(
-    if start[i,j] > 0 then puzzle[i,j] = start[i,j] else true endif );
+% initialize sudoku board
+constraint forall(i,j in 1..4)(
+    if clues[i,j] > 0 then sudoku[i,j] = clues[i,j] else true endif );
 
 % All different in rows 
-constraint forall (i in PuzzleRange) (
-                   alldifferent( [ puzzle[i,j] | j in PuzzleRange ]) ); 
+constraint forall (i in 1..4) (
+                   alldifferent( [ sudoku[i,j] | j in 1..4 ]) ); 
 
 % All different in columns.
-constraint forall (j in PuzzleRange) (
-                   alldifferent( [ puzzle[i,j] | i in PuzzleRange ]) ); 
+constraint forall (j in 1..4) (
+                   alldifferent( [ sudoku[i,j] | i in 1..4]) ); 
 
 % All different in sub-squares:
 constraint
-        forall (a, o in SubSquareRange)(
-                alldifferent( [ puzzle[(a-1) *S + a1, (o-1)*S + o1] |
-                                        a1, o1 in SubSquareRange ] ) );
+        forall (a, o in 1..2)(
+                alldifferent( [ sudoku[(a-1) *2 + a1, (o-1)*2 + o1] |
+                                        a1, o1 in 1..2 ] ) );
 solve satisfy;
 
-output  [show(puzzle)];
+output  [show(sudoku)];
+
+%[3, 4, 2, 1, 2, 1, 4, 3, 4, 3, 1, 2, 1, 2, 3, 4]
