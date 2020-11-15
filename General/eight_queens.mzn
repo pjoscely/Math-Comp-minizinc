@@ -1,17 +1,17 @@
 include "globals.mzn";
 
 % standard chess board
-int: n = 4;
+int: n = 8;
 
 % gives row and column position of queen
-% q[2] = 5 row = 2 col = 5
+% q[2] = 5 col = 2 row = 5
 array[1..n] of var 1..n: q;
 
-% no two queens in the same column
+% no two queens in the same row
 constraint all_different(q);
 
-% Queens in different diagonals
-constraint forall(i, j in 1..n where i < j) ((j-i) != abs(q[j] - q[i]));
+constraint alldifferent([ q[i] + i | i in 1..n]); % distinct diagonals
+constraint alldifferent([ q[i] - i | i in 1..n]); % upwards+downwards
 
 solve satisfy;
 
