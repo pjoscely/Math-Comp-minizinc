@@ -4,7 +4,7 @@
 How many integers between 100 and 999, inclusive, 
 have the property that some permutation of its digits 
 is a multiple of 11 between 100 and 999? 
-For example, both 121 and 211$ have this property.
+For example, both 121 and 211 have this property.
 
 (A)    226    (B)    243    (C)    270     (D)    469    (E)    486
 */
