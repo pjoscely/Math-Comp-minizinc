@@ -1,15 +1,15 @@
-% Coloring map with n colors
-int: n = 3;
+% Coloring map with 3 colors
+enum c = {red,green,blue};
 
 % Country variables
-var 1..n: X1;   
-var 1..n: X2;  
-var 1..n: X3;   
-var 1..n: X4;
-var 1..n: X5;  
-var 1..n: X6;   
-var 1..n: X7;  
-var 1..n: X8;
+var c: X1;   
+var c: X2;  
+var c: X3;   
+var c: X4;
+var c: X5;  
+var c: X6;   
+var c: X7;  
+var c: X8;
 
 % bordering countries have different colors
 constraint X1 != X2;
@@ -30,12 +30,12 @@ constraint X7 != X8;
 solve satisfy;
 
 /*
-X1 = 2;
-X2 = 3;
-X3 = 1;
-X4 = 2;
-X5 = 3;
-X6 = 2;
-X7 = 1;
-X8 = 3;
+X1 = green;
+X2 = blue;
+X3 = red;
+X4 = green;
+X5 = blue;
+X6 = green;
+X7 = red;
+X8 = blue;
 */
