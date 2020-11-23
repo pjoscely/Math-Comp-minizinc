@@ -23,6 +23,7 @@ constraint forall(i in 1..2004)(abs(a[i+1]-a[i]) = a[i+2]);
 
 solve satisfy;
 
+% display a(2)
 output[show(a[2])];
 
 % solutions:     324
