@@ -1,6 +1,10 @@
 /*
 Problem 5 AMC 12A 2020
-The 25 integers from -10 to 14 inclusive, can be arranged to form a 5-by-5 square in which the sum of the numbers in each row, the sum of the numbers in each column, and the sum of the numbers along each of the main diagonals are all the same. What is the value of this common sum?
+The 25 integers from -10 to 14 inclusive, can be arranged to form a 5-by-5 square 
+in which the sum of the numbers in each row, the sum of the numbers in each column, 
+and the sum of the numbers along each of the main diagonals are all the same. 
+What is the value of this common sum?
+
 A 2    B 5    C 10    D 25    E 50
 */
 include "alldifferent.mzn";
@@ -35,6 +39,4 @@ solve satisfy;
 /*
 g = array2d(1..5 ,1..5 ,[14, -7, 12, -8, -1, -6, 10, -3, 8, 1, -2, 7, -10, 2, 13, -5, 4, 0, 5, 6, 9, -4, 11, 3, -9]);
 c = 10;
-----------
-Finished in 8s 835msec
 */
