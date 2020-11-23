@@ -15,3 +15,14 @@ array[1..10] of var pets: kennel;
 constraint forall(i in 1..9)((kennel[i] = cat) -> (kennel[i+1] != cat));
 
 solve satisfy;
+
+% 144 solutions
+/*
+[cat, dog, cat, dog, cat, dog, cat, dog, cat, dog])
+[dog, dog, cat, dog, cat, dog, cat, dog, cat, dog])
+[dog, cat, dog, dog, cat, dog, cat, dog, cat, dog]);
+. . .
+[dog, dog, dog, dog, dog, dog, dog, dog, dog, cat])
+[cat, dog, dog, dog, dog, dog, dog, dog, dog, dog])
+[dog, dog, dog, dog, dog, dog, dog, dog, dog, dog])
+*/
