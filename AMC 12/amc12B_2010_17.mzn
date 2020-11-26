@@ -30,6 +30,8 @@ output["\(g[1,1])"++ " "++"\(g[1,2])"++ " "++"\(g[1,3])"++ "\n"++
 %  solutions:     42
 
 /*
+These are the 3 x 3 symmetric Young tableaux
+
 1 3 7
 2 4 8
 5 6 9
