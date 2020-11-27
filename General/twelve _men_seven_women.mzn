@@ -19,9 +19,6 @@ constraint sum([1| i in 1..19 where c[i] = M]) = 12;
 % no two women sit next to each other
 constraint forall(i in 1..18)(c[i] = W -> c[i+1] = M);  
 
-% start of the array wrap
-%constraint (c[1] = W -> c[19] = M);
-
 % end of array circle wrap 
 constraint (c[19] = W -> c[1] = M);
 
@@ -29,3 +26,18 @@ solve satisfy;
 
 % display seatings
 output["\(c)"];
+
+%  solutions:     1254
+/*
+[W, M, W, M, W, M, W, M, W, M, W, M, W, M, M, M, M, M, M]
+----------
+[M, W, M, W, M, W, M, W, M, W, M, W, M, W, M, M, M, M, M]
+----------
+[W, M, M, W, M, W, M, W, M, W, M, W, M, W, M, M, M, M, M]
+. . .
+[M, M, M, W, M, M, W, M, W, M, W, M, W, M, M, W, M, M, W]
+----------
+[M, W, M, W, M, M, W, M, W, M, M, M, W, M, M, W, M, M, W]
+----------
+[M, W, M, W, M, M, W, M, M, W, M, M, W, M, M, W, M, M, W]
+*/
