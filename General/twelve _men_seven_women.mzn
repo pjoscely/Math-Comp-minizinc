@@ -20,9 +20,9 @@ constraint sum([1| i in 1..19 where c[i] = M]) = 12;
 constraint forall(i in 1..18)(c[i] = W -> c[i+1] = M);  
 
 % start of the array wrap
-constraint (c[1] = W -> c[19] = M);
+%constraint (c[1] = W -> c[19] = M);
 
-% end of array wrap 
+% end of array circle wrap 
 constraint (c[19] = W -> c[1] = M);
 
 solve satisfy;
