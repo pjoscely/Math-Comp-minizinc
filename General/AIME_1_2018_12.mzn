@@ -6,6 +6,7 @@ with s(emptyset) defined to be 0. If T is chosen at random among all subsets of 
 the probability that s(T) is divisible by 3 is m/n, where m and n are 
 relatively prime positive integers. Find m.
 */
+
 % Universal set
 set of int:possible = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18};
 
