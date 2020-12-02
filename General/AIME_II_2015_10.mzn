@@ -6,6 +6,7 @@ if a(k) <= a(k+1) + 2 for each 1 <= k <= n-1. For example, 53421 and 14253 are
 quasi-increasing permutations of the integers 1, 2, 3, 4, 5, but 45123 is not. 
 Find the number of quasi-increasing permutations of the integers 1, 2,...,7.
 */
+
 include "alldifferent.mzn";
 
 % represents the permutation
