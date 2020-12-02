@@ -35,16 +35,12 @@ constraint forall(i in 1..4)(sum(j in 1..4)(a[i,j]) = 1);
 
 % given a task only one machine
 constraint forall(j in 1..4)(sum(i in 1..4)(a[i,j]) = 1);                                                         
-                                                                                                          
-% minimize the cost
-                                                                                                        solve minimize cost;
-                                                                                                       
-                                                                                                          % display the min cost
+                                                                                                                                                                                                           % minimize the cost
+                                                                                                         solve minimize cost;
+                                                                                                                                                                                                                 % display the min cost
                                                                                                          output[
-                                                                                                            "Machine Assignment\n"++
-                                                                                                             
-                                                                                                         show(a[1,1])++" "++show(a[1,2])++" "++show(a[1,3])++" "++show(a[1,4])++"\n"++  
-                                                                                                        
+                                                                                                          "Machine Assignment\n"++
+                                                                                                                                                                                                                  show(a[1,1])++" "++show(a[1,2])++" "++show(a[1,3])++" "++show(a[1,4])++"\n"++                                                                                                          
 show(a[2,1])++" "++show(a[2,2])++" "++show(a[2,3])++" "++show(a[2,4])++"\n"++ 
 show(a[3,1])++" "++show(a[3,2])++" "++show(a[3,3])++" "++show(a[3,4])++"\n"                                                                                                     
 ++show(a[4,1])++" "++show(a[4,2])++" "++show(a[4,3])++" "++show(a[4,4])++"\n" 
