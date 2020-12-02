@@ -35,8 +35,9 @@ constraint forall(i in 1..4)(sum(j in 1..4)(a[i,j]) = 1);
 
 % given a task only one machine
 constraint forall(j in 1..4)(sum(i in 1..4)(a[i,j]) = 1);                                                         
-                                                                                                          % minimize the cost
-                                                                                                          solve minimize cost;
+                                                                                                          
+% minimize the cost
+                                                                                                        solve minimize cost;
                                                                                                        
                                                                                                           % display the min cost
                                                                                                          output[
