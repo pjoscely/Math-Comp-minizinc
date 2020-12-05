@@ -13,6 +13,7 @@ Cleaners (C)    54 58  36  0   50  92
 Drugstore (D)   20 54  42  50  0   45
 Target (T)      40 67  71  92  45  0
 */
+
 include "alldifferent.mzn";
 
 par int:num = 6;
@@ -52,7 +53,6 @@ output["Optimal Hamilton Circuit:\n"++
        ++show(c[4])++" "++show(c[5])++" "++show(c[6])++" "
        ++show(c[1])
        ++"\nMininum cost = "++show(total)];
-
 /*
 Optimal Hamilton Circuit:
 T D C G P H T
