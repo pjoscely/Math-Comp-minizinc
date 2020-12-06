@@ -15,8 +15,7 @@ Find the product abc.
 
 */
 
-
-% restrict search 
+% restrict the search 
 var 1..1000:a;
 
 var int: b;
