@@ -18,6 +18,7 @@ w is assigned to task t, and otherwise Assign[w, t] = 0.
 Write a model which ensures at least 2 workers, but no more 
 than 5 workers are assigned to each task.
 */
+
 array [1..6,1..12] of var 0..1:Assign;
 
 % at least 2 workers are assigned to each task
