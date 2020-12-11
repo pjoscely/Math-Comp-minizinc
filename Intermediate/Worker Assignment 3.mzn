@@ -28,8 +28,7 @@ array [1..6,1..6] of 0..1: bad_pair =
       |0,0,1,0,0,0
       |0,0,0,1,0,0 |] ;
 
-bad_pair[w1, w2] = 1 means that workers w1 and w2 cannot 
-be assigned to the same task.
+bad_pair[w1, w2] = 1 means that workers w1 and w2 cannot be assigned to the same task.
 
 */
 array [1..6,1..6] of 0..1: bad_pair = 
