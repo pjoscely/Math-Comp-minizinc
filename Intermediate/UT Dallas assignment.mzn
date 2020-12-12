@@ -22,6 +22,7 @@ array[1..4,1..4] of var int:g = [|13, 4, 7, 6|
                                  1, 11, 5, 4|
                                  6, 7, 2, 8 |
                                  1, 3, 5, 9|];
+
 % 0-1 machine task matching matrix
 % matrix will be a permutation matrix
 % a single 1 in any row or column                                                            
