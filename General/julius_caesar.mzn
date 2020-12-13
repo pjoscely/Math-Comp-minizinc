@@ -18,7 +18,6 @@ var 0..9:W;
 
 var 0..9:T;
 
-
 % NO + MAN + BEARS + SORROW = BETTER
 constraint 10*N + O + 100*M + 10*A + N + 10000*B + 
            1000*E+ 100*A + 10*R + S + 100000*S + 10000*O+ 1000*R + 100*R + 10*O + W =
