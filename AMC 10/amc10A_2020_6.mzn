@@ -14,8 +14,7 @@ ans = {i | i in nums where i mod 5 = 0};
 
 solve satisfy;
 output["Number of possible is: "++"\(card(ans))"];
+
 /*
 Number of possible is: 100
-----------
-==========
 */
