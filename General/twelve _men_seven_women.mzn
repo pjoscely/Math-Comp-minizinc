@@ -7,6 +7,7 @@ ways can we seat them around a circular table so that no two women
 sit next to each other? (Note: it may help to assume the seats are
 numbered)
 */
+
 % M = man W = woman
 enum p = {M, W};
 
@@ -28,6 +29,7 @@ solve satisfy;
 output["\(c)"];
 
 %  solutions:     1254
+
 /*
 [W, M, W, M, W, M, W, M, W, M, W, M, W, M, M, M, M, M, M]
 ----------
