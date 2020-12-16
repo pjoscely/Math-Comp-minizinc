@@ -49,6 +49,4 @@ output ["\(10000*TenTh+1000*Th+100*H+10*T+U)"];
 [ 3200 more solutions ]
 [ 1779 more solutions ]
 97999
-----------
-==========
 */
