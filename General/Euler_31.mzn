@@ -3,7 +3,6 @@ Project Euler
 https://projecteuler.net/problem=31
 
 Coin sums
-
 Problem 31
 
 In the United Kingdom the currency is made up of pound (£) and pence (p). 
