@@ -1,3 +1,4 @@
+
 % 0-1 knapsack
 array[1..8] of var 0..1:sack;
 
