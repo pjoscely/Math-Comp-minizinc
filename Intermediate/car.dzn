@@ -1,0 +1,11 @@
+n = 10;
+% oil_filter, wipers, air_filter, scheduled_maint, new_tires,
+% new_battery, brakes, anti_freeze, tune_up, wheels_aligned  
+
+duration = [20, 15, 10, 60, 45, 30, 120, 15, 90, 60];
+mechanics = [0, 0, 0, 1, 0, 0, 1, 0, 1, 1];
+assistants = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+
+available_time = 480;
+available_mechanics = 1;
+available_assistants = 3;
