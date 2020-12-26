@@ -38,3 +38,11 @@ output ["end = \(end)\n"] ++
        [ show_int(digs,s[i,j]) ++ " " ++ 
          if j == tasks then "\n" else "" endif |
          i in JOB, j in TASK ];
+/*
+end = 30
+ 5  9 13 18 21 
+ 6 13 18 25 27 
+ 1  5  9 13 17 
+ 0  1  2  3  9 
+ 9 16 25 27 29
+*/
