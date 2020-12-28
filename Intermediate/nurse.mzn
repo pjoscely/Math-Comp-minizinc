@@ -24,6 +24,7 @@ constraint forall(j in DAY)(
              sum(i in NURSE)(roster[i,j] == d) == req_day /\
              sum(i in NURSE)(roster[i,j] == n) == req_night
            );
+           
 constraint forall(i in NURSE)(
              regular([roster[i,j] | j in DAY], Q, S, t, q0, STATE) /\
              sum(j in DAY)(roster[i,j] == n) >= min_night
