@@ -3,6 +3,7 @@ Problem 6 AMC 10A 2020
 How many 4-digit positive integers (that is, integers between 1000 and 9999, inclusive) having only even digits are divisible by 5?
 A 80    B 100    C 125     D 200   E 500 
 */
+
 set of int: e;
 e = {i | i in 0..9 where i mod 2 = 0};
 
